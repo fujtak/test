@@ -65,8 +65,7 @@ const contentsFormatter = document.querySelector('.contents-formatter');
 const form = document.querySelector('form');
 const loading = document.querySelector('.loading');
 
-// form.addEventListener('submit', handleLoading);
-handleLoading();
+form.addEventListener('submit', handleLoading);
 
 function handleLoading() {
   hideContents();
