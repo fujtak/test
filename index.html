@@ -35,28 +35,36 @@
           <!-- process-index -->
           <nav class="process-index">
             <ol class="process-index__list">
-              <li class="process-index__item"><span class="process-index__item-number">1.</span> 結合結果の保存</li>
-              <li class="process-index__item"><span class="process-index__item-number">2.</span> 結合元の記録をSTRAVAから削除</li>
-              <li class="process-index__item"><span class="process-index__item-number">3.</span> STRAVAへアップロード</li>
+              <li class="process-index__item"><span class="process-index__item-number">1.</span> <a href="#download" class="process-index__item-link">結合結果の保存</a></li>
+              <li class="process-index__item"><span class="process-index__item-number">2.</span> <a href="#remove" class="process-index__item-link">結合元の記録をSTRAVAから削除</a></li>
+              <li class="process-index__item"><span class="process-index__item-number">3.</span> <a href="#upload" class="process-index__item-link">STRAVAへアップロード</a></li>
             </ol>
           </nav>
-          <!-- process-step -->
-          <section class="process-step">
+          <!-- download -->
+          <section class="process-step" id="download">
             <h4 class="process-step__title">結合結果の保存</h4>
             <div class="process-step__text">
               <p class="process-step__text-body">上のリンクから結合結果のファイルをお好きなフォルダに保存してください。</p>
             </div>
           </section>
-          <!-- process-step -->
-          <section class="process-step">
+          <!-- remove -->
+          <section class="process-step" id="remove">
             <h4 class="process-step__title">結合元の記録をSTRAVAから削除</h4>
             <p class="process-step__text">
               STRAVAを開き、結合する際に選んだ記録を全て削除してください。<br>
+              STRAVAでは同一時刻の記録を重複して持てないからです。<br>
               ここで、別の場所にそれぞれの記録のgpxファイルを保存しておくことをおすすめします。<br>
               削除の仕方は次の手順です。
             </p>
             <p class="process-step__text">「ダッシュボード」→「削除」</p>
             <img src="https://fujtak.github.io/test/img/step-remove.jpg" alt="説明用画像" class="process-step__img">
+          </section>
+          <!-- upload -->
+          <section class="process-step" id="upload">
+            <h4 class="process-step__title">STRAVAへアップロード</h4>
+            <p class="process-step__text">結合結果のファイルを次の手順でアップロードします。</p>
+            <p class="process-step__text">「右上の＋をクリック」→「アクティビティをアップロード」</p>
+            <img src="https://fujtak.github.io/test/img/step-upload.jpg" alt="説明用画像" class="process-step__img">
           </section>
         </div>
       </div>
