@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join</title>
+    <title>Result</title>
     <!-- stylesheet-->
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -25,85 +25,58 @@
       </header>
       <!-- contents-formatter -->
       <div class="contents-formatter -wide">
-        <!-- join -->
-        <form class="join -tension_l">
-          <!-- title -->
+        <section class="result -tension_m">
+          <!-- heading -->
           <div class="content-formatter">
-            <div class="join__title join-title">
-              <h2 class="join-title__body">結合したい記録を選ぼう</h2>
+            <div class="result-title">
+              <h2 class="result-title__body">結合結果をSTRAVAにアップロードしよう</h2>
             </div>
           </div>
-          <!-- table -->
+          <!-- result -->
           <div class="content-formatter">
-            <table class="join__table join-table table">
-              <thead>
-                <tr>
-                  <th></th>
-                  <th>スポーツ名</th>
-                  <th>日付</th>
-                  <th>タイトル</th>
-                  <th>タイム</th>
-                  <th>距離</th>
-                  <th>標高</th>
-                  <th>サイズ</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr data-id="1">
-                  <td><input type="checkbox" class="join-table__checkbox"></td>
-                  <td>ライド</td>
-                  <td>2022/1/1(曜)</td>
-                  <td>午前のライド</td>
-                  <td>11:11:11</td>
-                  <td>1,234.00km</td>
-                  <td>1,234m</td>
-                  <td id="size-1">12.34MB</td>
-                </tr>
-                <tr data-id="2">
-                  <td><input type="checkbox" class="join-table__checkbox"></td>
-                  <td>ライド</td>
-                  <td>2022/2/2(曜)</td>
-                  <td>午後のライド</td>
-                  <td>22:22:22</td>
-                  <td>1,234.00km</td>
-                  <td>1,234m</td>
-                  <td id="size-2">23.45MB</td>
-                </tr>
-                <tr data-id="3">
-                  <td><input type="checkbox" class="join-table__checkbox"></td>
-                  <td>ライド</td>
-                  <td>2022/3/3(曜)</td>
-                  <td>前半</td>
-                  <td>33:33:33</td>
-                  <td>1,234.00km</td>
-                  <td>1,234m</td>
-                  <td id="size-3">1.23MB</td>
-                </tr>
-                <tr data-id="4">
-                  <td><input type="checkbox" class="join-table__checkbox"></td>
-                  <td>ライド</td>
-                  <td>2022/4/4(曜)</td>
-                  <td>前半</td>
-                  <td>44:44:44</td>
-                  <td>1,234.00km</td>
-                  <td>1,234m</td>
-                  <td id="size-4">25.00MB</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="result__link result-link">
+              <p class="result-link__label">結合結果</p>
+              <a href="" class="result-link__link link-default">example.gpx</a>
+            </div>
           </div>
-          <!-- warning-oversize -->
-          <p class="join__warning-oversize -color_red -hidden">サイズがオーバーしています。</p>
-          <!-- btn-submit -->
-          <div class="content-formatter">
-            <button type="submit" class="join__btn-submit btn-main" disabled="true">結合</button>
-          </div>
-        </form>
-      </div>
-      <!-- loading -->
-      <div class="loading -hidden">
-        <canvas class="loading__canvas" width="150" height="150"></canvas>
-        <p class="loading__text">結合中<span class="loading__text-dot"></span></p>
+        </section>
+        <!-- process -->
+        <div class="content-formatter">
+          <section class="process -tension_m">
+            <ol>
+              <li class="process-step">
+                <h4 class="process-step__title"><span class="process-step__number">1</span>上のリンクから結合結果を保存。</h4>
+              </li>
+              <li class="process-step">
+                <h4 class="process-step__title"><span class="process-step__number">2</span>STRAVAを開く。</h4>
+              </li>
+              <li class="process-step">
+                <h4 class="process-step__title"><span class="process-step__number">3</span>「ダッシュボード」→「削除」</h4>
+                <img src="img/step3.jpg" alt="説明用画像3" class="process-step__img">
+              </li>
+              <li class="process-step">
+                <h4 class="process-step__title"><span class="process-step__number">4</span>まだある結合前のファイルを削除。</h4>
+              </li>
+              <li class="process-step">
+                <h4 class="process-step__title"><span class="process-step__number">5</span>右上の+をクリック。</h4>
+              </li>
+              <li class="process-step">
+                <h4 class="process-step__title"><span class="process-step__number">6</span>「アクティビティをアップロード」</h4>
+                <img src="img/step6.jpg" alt="説明用画像5" class="process-step__img">
+              </li>
+              <li class="process-step">
+                <h4 class="process-step__title"><span class="process-step__number">7</span>「ファイル」→「ファイル選択」<br>保存したファイルを選択。</h4>
+                <img src="img/step7.jpg" alt="説明用画像6" class="process-step__img">
+              </li>
+              <li class="process-step">
+                <h4 class="process-step__title"><span class="process-step__number">8</span>タイトルをつけなおす。</h4>
+              </li>
+              <li class="process-step">
+                <h4 class="process-step__title"><span class="process-step__number">9</span>「保存＆表示」をクリック。</h4>
+              </li>
+            </ol>
+          </section>
+        </div>
       </div>
       <!-- footer -->
       <footer class="footer -wide">
@@ -112,8 +85,6 @@
         </div>
       </footer>
     </div>
-    
-    <script src="js/table.js"></script>
-    <script src="js/loading.js"></script>
+
   </body>
 </html>
